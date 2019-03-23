@@ -5,7 +5,7 @@
  * @Date: 2019-03-23 16:48:01
  **/
 
-export default class Queue {
+class Queue {
   constructor() {
     this.items = []
   }
@@ -51,3 +51,5 @@ export default class Queue {
     console.log(this.items.toString())
   }
 }
+
+module.exports = Queue

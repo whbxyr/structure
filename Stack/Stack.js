@@ -5,7 +5,7 @@
  * @Date: 2019-03-23 16:22:44
  **/
 
-export default class Stack {
+class Stack {
   constructor() {
     this.items = []
   }
@@ -45,3 +45,5 @@ export default class Stack {
     console.log(this.items.toString())
   }
 }
+
+module.exports = Stack
