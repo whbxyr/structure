@@ -10,10 +10,12 @@ class Set {
     this.items = {}
   }
 
+  // 查询
   has(value) {
     return this.items.hasOwnProperty(value)
   }
 
+  // 新增
   add(value) {
     if (!this.has(value)) {
       this.items[value] = value
@@ -22,6 +24,7 @@ class Set {
     return false
   }
 
+  // 移除
   remove(value) {
     if (this.has(value)) {
       delete this.items[value]
@@ -30,14 +33,17 @@ class Set {
     return false
   }
 
+  // 清空
   clear() {
     this.items = {}
   }
 
+  // 获取大小
   size() {
     return Object.keys(this.items).length
   }
 
+  // 获取所有的值
   values() { 
     return Object.keys(this.items)
   }
