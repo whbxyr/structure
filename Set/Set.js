@@ -45,7 +45,15 @@ class Set {
 
   // 获取所有的值
   values() { 
-    return Object.keys(this.items)
+    // return Object.keys(this.items)
+    const items = this.items
+    let values = []
+    for (let key in items) {
+      if (items.hasOwnProperty(key)) {
+        values.push(items[key])
+      }
+    }
+    return values
   }
 }
 
